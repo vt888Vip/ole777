@@ -1,0 +1,55 @@
+body {
+    background-image: url('/images/bg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    transition: all 0.3s ease !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 90%;
+    height: auto;
+}
+
+.mySwiper {
+    height: 265px;
+    margin-top: -200px; /* thêm dòng này */
+}
+
+
+.swiper-slide-active {
+    transform: translate3d(0px, -240px, 0px) rotateZ(0deg) scale(1.2) !important;
+}
+
+.swiper-slide-active img {
+    width: 100%;
+    height: auto;
+}
+
+.register-btn {
+    min-width: 350px;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-image: url('images/mb_bg.webp');
+        overflow: auto;
+    }
+    .mySwiper {
+        height: 120px;
+        margin-top: 70px;
+    }
+    .swiper-slide-active {
+        transform: translate3d(0px, -110px, 0px) rotateZ(0deg) scale(1.2) !important;
+    }
+    .register-btn {
+        min-width: auto;
+    }
+}
